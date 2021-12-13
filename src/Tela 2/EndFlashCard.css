@@ -1,0 +1,56 @@
+.end-flash-card{
+    width: 392px;
+    height: 575.75px;
+    display: flex;
+    border-radius: 12px;
+    position: relative;
+    align-items: center;
+    justify-items: center;
+    padding: 19px 49px;
+    flex-direction: column;
+    gap: 216px;
+}
+
+.end-flash-card .question{
+    text-align: left;
+    font-size: 16px;
+    line-height: 19px;
+
+}
+
+.end-flash-card img{
+    position: absolute;
+    bottom: 22.64px;
+    right: 19.59px;
+    width: 39.81px;
+    height: auto;
+}
+
+.card-num{
+    position: absolute;
+    top: 12.87px;
+    right: 12px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.yellow{
+    border: 5px solid #FFEF61;
+    box-shadow: 0px 8px 24px rgba(255, 239, 97, 0.12);
+}
+
+.green{
+    border: 5px solid #62DB38;
+    box-shadow: 0px 8px 24px rgba(98, 219, 56, 0.12);
+}
+
+.red{
+    border: 5px solid #F64848;
+    box-shadow: 0px 8px 24px rgba(246, 72, 72, 0.12);
+}
+
+.black{
+    border: 5px solid #000000;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
+}
