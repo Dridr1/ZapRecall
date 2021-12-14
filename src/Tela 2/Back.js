@@ -10,7 +10,7 @@ export default function Back(props) {
 
     return(
         <div className="back">
-            <span className="card-num">{props.flashCardNum + 1}/8</span>
+            <span data-identifier="counter" className="card-num">{props.flashCardNum + 1}/8</span>
             <span className="question">{props.card.question}</span>
             <span className="answer">{props.card.answer}</span>
             <div className="buttons">

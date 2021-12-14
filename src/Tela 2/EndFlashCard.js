@@ -14,10 +14,10 @@ export default function EndFlashCard(props) {
     return (
         <>
             <div className={'end-flash-card ' + props.borderColor}>
-                <span className="card-num">{props.flashCardNum + 1}/8</span>
+                <span data-identifier="counter" className="card-num">{props.flashCardNum + 1}/8</span>
                 <span className="question">{props.card.question}</span>
                 <span>{props.card.answer}</span>
-                <img onClick={nextCard} src={turn} alt="Próximo FlashCard" />
+                <img data-identifier="arrow" onClick={nextCard} src={turn} alt="Próximo FlashCard" />
             </div>
         </>
     );

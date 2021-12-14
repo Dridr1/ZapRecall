@@ -4,9 +4,9 @@ import "./Front.css";
 export default function Front(props) {
     return (
         <div className="front">
-            <span>{props.flashCardNum + 1}/8</span>
+            <span data-identifier="counter">{props.flashCardNum + 1}/8</span>
             <span className="question">{props.card.question}</span>
-            <img onClick={props.nextFace} src={turn} alt="Ver resposta" />
+            <img data-identifier="arrow" onClick={props.nextFace} src={turn} alt="Ver resposta" />
         </div>
     );
 }

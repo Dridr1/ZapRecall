@@ -13,7 +13,7 @@ export default function Flashcard(props) {
     }
 
     return(
-        <div className="flashcard">
+        <div data-identifier="flashcard" className="flashcard">
             {currentFace === 'front' ? <Front card={props.card} flashCardNum={props.flashCardNum} nextFace={() => nextFace('back')}/> : currentFace === 'back' ? <Back nextFace={() => nextFace('end')} setColor={setColor} setAllOK={props.setAllOK} flashCardNum={props.flashCardNum} card={props.card}/> : <EndFlashCard endSection={props.endSection} flashCardNum={props.flashCardNum} card={props.card} borderColor={color} nextFace={() => nextFace('front')} nextCard={props.nextCard}/>}
         </div>
     );
